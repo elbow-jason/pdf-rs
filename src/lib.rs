@@ -35,7 +35,7 @@ mod lex;
 mod object_stream;
 mod objects;
 mod optional_content;
-mod page;
+pub mod page;
 mod parse_binary;
 mod postscript;
 mod render;
