@@ -33,7 +33,7 @@ mod icc_profile;
 mod job_ticket;
 mod lex;
 mod object_stream;
-mod objects;
+pub mod objects;
 mod optional_content;
 pub mod page;
 mod parse_binary;
