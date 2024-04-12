@@ -23,6 +23,12 @@ pub struct ContentLexer<'a> {
     in_compatibility_mode: u128,
 }
 
+impl<'a> ContentLexer<'a> {
+    pub fn as_slice(&'a self) -> &'a [u8] {
+        &self.buffer[..]
+    }
+}
+
 #[derive(Debug, PartialEq)]
 pub enum ContentToken<'a> {
     Object(Object<'a>),
