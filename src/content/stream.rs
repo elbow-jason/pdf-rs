@@ -9,7 +9,7 @@ use crate::{
 };
 
 #[derive(Clone)]
-pub(crate) struct ContentStream {
+pub struct ContentStream {
     pub combined_buffer: Vec<u8>,
 }
 

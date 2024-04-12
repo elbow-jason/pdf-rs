@@ -236,7 +236,7 @@ pub struct PageObject<'a> {
     ///
     /// Conforming writers shall not create a Contents array containing no elements.
     // #[field("Contents")]
-    pub(crate) contents: Option<TypedReference<'a, ContentStream>>,
+    pub contents: Option<TypedReference<'a, ContentStream>>,
 
     /// The number of degrees by which the page shall be rotated clockwise
     /// when displayed or printed. The value shall be a multiple of 90.
